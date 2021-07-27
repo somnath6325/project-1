@@ -1,9 +1,14 @@
 pipeline {
     agent any
-    triggers {
-	cron ('* * * * *')
-	}
+    //triggers {
+	//cron ('* * * * *')
+	//}
     stages {
+	stage('Git checkout') {			
+	    steps {
+	         git 'https://github.com/abhi6666/Java-repository.git'
+	    }
+        }    
 	stage('Build') {			
 	    steps {
 	         echo "Building the application"
