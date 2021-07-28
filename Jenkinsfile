@@ -3,7 +3,7 @@ pipeline {
     triggers {
 		cron('* * * * *')
 	}
-    Stages { 
+    stages { 
 	stage('Build') {
 	    steps {
 			      echo 'testing the application'
