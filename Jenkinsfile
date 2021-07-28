@@ -1,28 +1,28 @@
 pipeline {
     agent any
-	triggers {
+    triggers {
 		cron('* * * * *')
 	}
-	Stages { 
-		stage('Build') {
-			steps {
+    Stages { 
+	stage('Build') {
+	    steps {
 			      echo 'testing the application'
-			}
-		}
+	    }
+	}
 	
-		stage('Test') {
-			steps {
+	stage('Test') {
+	    steps {
 			      
-				echo 'testing the application'
-			}
+			echo 'testing the application'
+	    }
         }
 		
-		stage('Test') {
-			steps {
+	stage('Test') {
+	    steps {
 			      
-				echo 'testing the application'
-			}
+			echo 'testing the application'
+	    }
         }
-	}
+    }
 	
 }
